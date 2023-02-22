@@ -1,1 +1,19 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<BugCollection version="3.0.0" sequence="0" timestamp="1645530263228">
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="CORRECTNESS">
+    <Class classname="com.example.myapp.MyClass"/>
+    <Method name="myMethod" signature="()V"/>
+    <SourceLine classname="com.example.myapp.MyClass" start="42" end="42"/>
+    <Message>
+      <![CDATA[Dead store to local variable]]>
+    </Message>
+  </BugInstance>
+  <BugInstance type="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE" priority="1" rank="6" abbrev="SQL" category="MALICIOUS_CODE">
+    <Class classname="com.example.myapp.MyOtherClass"/>
+    <Method name="otherMethod" signature="(Ljava/lang/String;)V"/>
+    <SourceLine classname="com.example.myapp.MyOtherClass" start="84" end="84"/>
+    <Message>
+      <![CDATA[Non-constant String passed to execute method on an SQL statement]]>
+    </Message>
+  </BugInstance>
+</BugCollection>
